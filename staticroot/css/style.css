@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+	font-family: Raleway, sans-serif;
+}
+
+body {
+	background-color: #900202b4 ;
+	background-image: url('../img/Background.jpg'); /* Replace 'your-image-url.jpg' with the URL or path to your image */
+	background-size: cover; 
+   	background-position: center; /* Center the background image */
+    background-repeat: no-repeat; 
+} 
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	border-radius: 10px;
+}
+
+
+
+.outerbox {
+    width: 1200px;
+    height: 600px;
+    background-color: rgba(149,21,28,0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .buttonfunct {
+	align-items: center;
+	appearance: none;
+	background-color: #FCFCFD;
+	border-radius: 10px;
+	border-width: 0;
+	box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+	box-sizing: border-box;
+	color: #36395A;
+	cursor: pointer;
+	display: inline-flex;
+	font-family: "JetBrains Mono",monospace;
+	height: 48px;
+	justify-content: center;
+	line-height: 1;
+	list-style: none;
+	overflow: hidden;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-right: 10px;
+	position: relative;
+	text-align: left;
+	text-decoration: none;
+	transition: box-shadow .15s,transform .15s;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	white-space: nowrap;
+	will-change: box-shadow,transform;
+	font-size: 18px;
+  }
+  
+  .buttonfunct:focus {
+	box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  }
+  
+  .buttonfunct:hover {
+	box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+	transform: translateY(-2px);
+  text-decoration: none;
+  }
+  
+  .buttonfunct:active {
+	box-shadow: #D6D6E7 0 3px 7px inset;
+	transform: translateY(2px);
+  }
+
+  .buttonscontainer {
+	width: 100%; /* Adjust width as needed */
+    margin-top: 25px; /* Adjust margin-top as needed */
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .insidecontainer{
+	width: 100%; /* Adjust width as needed */
+	height: 100%;
+    margin-top: 20px;
+	display: flex;
+    justify-content: left;
+
+  }
+
+  .FRLSimages{
+	height: 75%;
+	width: 47%;
+	border-radius: 20px;
+	margin-left: 20px;
+	margin-top: 15px;
+
+  }
+
+  .LSimages{
+    height: 450px;
+    width: 90%;
+    border-radius: 20px;
+    margin-top: 15px;
+   
+  
+    }
+
+  .Capimages{
+    height: 450px;
+    width: 70%;
+    border-radius: 20px;
+    margin-top: 40px;
+
+  }
+  .arrowbutton{
+    margin-right: 0px;
+  }
+  
+  .LSimagescont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #map {
+    height: 400px;
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.mapouter{
+  display: flex;
+    justify-content: center;
+}
+
+
+ /*** FONTS ***/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i');
+
+/*** VARIABLES ***/
+/* Colors */
+:root {
+  --black: #1d1f20;
+  --blue: #83e4e2;
+  --red: #900202b4;
+  --yellow: #fddc32;
+  --white: #fafafa;
+}
+
+/*** EXTEND ***/
+/* box-shadow */
+@keyframes example {
+  to {
+    box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+  }
+}
+
+/*** STYLE ***/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+  font-family: 'Raleway', sans-serif;
+}
+
+main {
+  display: block;
+  margin: 0 10px;
+  max-width: 40rem;
+  padding: 1rem;
+}
+
+.Title{
+	text-align: center; /* Center the text */
+	color: white;
+}
+ol.gradient-list {
+  counter-reset: gradient-counter;
+  list-style: none;
+  margin: 1.75rem 0;
+  padding-left: 1rem;
+}
+
+ol.gradient-list > li {
+  background: white;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  animation: example 1s infinite alternate;
+  counter-increment: gradient-counter;
+  margin-top: 1rem;
+  min-height: 3rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  position: relative;
+  width: 140%;
+}
+
+.suspimg{
+	background: linear-gradient(130deg, var(--white) 20%, var(--red) 80%);
+	float: left; /* Float the image to the left */
+	border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  width: 100px;
+  height: 100px;
+	margin-right: 10px;
+  object-fit: cover;
+  }
+
+.datetime{
+  color: white;
+  font-family: "JetBrains Mono", monospace;
+  display: flex;
+  justify-content: center;
+  margin-top:15px;
+}
+
+@for $i from 1 through 5 {
+  ol.gradient-list > li:nth-child(10n+#{$i})::before {
+    background: linear-gradient(135deg, rgba(var(--red), $i * 0.2) 0%, rgba(var(--yellow), $i * 0.2) 100%);
+  }
+}
+
+@for $i from 6 through 10 {
+  ol.gradient-list > li:nth-child(10n+#{$i})::before {
+    background: linear-gradient(135deg, rgba(var(--red), 1 - (($i - 5) * 0.2)) 0%, rgba(var(--yellow), 1 - (($i - 5) * 0.2)) 100%);
+  }
+}
+
+ol.gradient-list > li + li {
+  margin-top: 2rem;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  align-items: center;
+	appearance: none;
+	background-color: #FCFCFD;
+	border-radius: 10px;
+	border-width: 0;
+	box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+	box-sizing: border-box;
+	color: #36395A;
+	cursor: pointer;
+	display: inline-flex;
+	font-family: "JetBrains Mono",monospace;
+	height: 40px;
+	justify-content: center;
+	line-height: 1;
+	list-style: none;
+	overflow: hidden;
+	padding-left: 16px;
+	padding-right: 16px;
+	position: relative;
+	text-align: left;
+	text-decoration: none;
+	transition: box-shadow .15s,transform .15s;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	white-space: nowrap;
+	will-change: box-shadow,transform;
+	font-size: 15px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  
+}
+
+.dropdowncontainer{
+  display: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.buttonscontainer {
+  width: 100%; /* Adjust width as needed */
+    margin-top: 25px; /* Adjust margin-top as needed */
+    flex-wrap: wrap;
+  }
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #900202b4 ;
+    background-image: url('../img/Background2.jpg'); /* Replace 'your-image-url.jpg' with the URL or path to your image */
+    background-size: cover; 
+       background-position: center; /* Center the background image */
+      background-repeat: no-repeat; 
+  } 
+  .outerbox {
+    width: 300px;
+    height: 450px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .buttonscontainer {
+    width: 100%; /* Adjust width as needed */
+      margin-top: 25px; /* Adjust margin-top as needed */
+      flex-wrap: wrap;
+      display: none;
+    }
+
+    .dropdown{
+      display: block;
+    }
+
+  .insidecontainer{
+    flex-direction: column;
+     align-items: center;
+  }
+  .dropdowncontainer{
+    display: flex !important;
+    justify-content: center;
+    margin-top: 7px;
+    
+  }
+
+  .FRLSimages {
+    height: 30%;
+    width: 90%;
+    border-radius: 20px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.Title {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  margin-top : 2px;
+}
+
+ol.gradient-list {
+  padding-left: 0rem; 
+}
+
+ol.gradient-list > li {
+  width: 100%;
+  font-size: xx-small;
+  margin-right: 60px;
+  align-items: center;
+}
+
+.suspimg {
+  width: 60px;
+  height: 60px;
+  
+}
+
+.LSimages {
+  height: 300px;
+  width: 90%;
+  border-radius: 20px;
+  margin-top: 15px;
+}
+
+.Capimages {
+  height: 250px;
+  width: 70%;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+#map {
+  height: 300px;
+  
+}
+
+.datetime {
+  font-size: small;
+}
+
+}
+
+
+

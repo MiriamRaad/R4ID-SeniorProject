@@ -1,0 +1,63 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RAID ~ Make Every Mission Impossible Posible </title>
+	  <link rel="stylesheet" href="{% static '/css/style.css' %}" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+</head>
+  
+ 
+
+
+<div class="container">
+	
+	
+	<div class="outerbox">
+
+		<div class="dropdown dropdowncontainer ">
+			<button class="dropbtn">RAID Functionalities </button>
+			<div class="dropdown-content">
+			  <a href="fr">Face Recognition</a>
+			  <a href="ls">Live Streaming</a>
+			  <a href="ci">Photo Gallery</a>
+			  <a href="gps">GPS Tracking</a>
+			</div>
+		  </div>
+
+		<div class="buttonscontainer">
+			<a href="fr" class="buttonfunct" role="button">Face Recognition</a>
+			<a href="ls" class="buttonfunct" role="button">Live Streaming</a>
+			<a href="ci" class="buttonfunct" role="button">Photo Gallery</a>
+			<a href="gps" class="buttonfunct" role="button">GPS Tracking</a>
+
+
+		</div>
+		<div id="datetime" class="datetime"></div>
+		<div class = "mapouter">
+				<div id="map"></div>
+		</div>
+	
+		
+
+		
+
+
+
+				
+	</div>
+</div>
+
+
+<script src="{% static '/js/map.js' %}"></script>
+<script src="{% static '/js/dateandtime.js' %}"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8oIJ5XgsV3iqolpTfSnF0TQAzGkI4T-M&callback=initMap">
+    </script>
+
+</html>
